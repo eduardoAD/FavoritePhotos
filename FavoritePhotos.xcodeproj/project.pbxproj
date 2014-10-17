@@ -16,6 +16,8 @@
 		E41648C619F061E9008984D3 /* FavoritePhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E41648C519F061E9008984D3 /* FavoritePhotosTests.m */; };
 		E4AD33CC19F0BCBE00ACCCC9 /* insta.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4AD33CB19F0BCBE00ACCCC9 /* insta.plist */; };
 		E4AD33CE19F0DB3B00ACCCC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AD33CD19F0DB3B00ACCCC9 /* CoreLocation.framework */; };
+		E4AD33D119F0E41000ACCCC9 /* CollectionViewImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD33D019F0E41000ACCCC9 /* CollectionViewImageCell.m */; };
+		E4AD33D419F0F75300ACCCC9 /* ImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD33D319F0F75300ACCCC9 /* ImageDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,10 @@
 		E41648C519F061E9008984D3 /* FavoritePhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritePhotosTests.m; sourceTree = "<group>"; };
 		E4AD33CB19F0BCBE00ACCCC9 /* insta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = insta.plist; sourceTree = "<group>"; };
 		E4AD33CD19F0DB3B00ACCCC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E4AD33CF19F0E41000ACCCC9 /* CollectionViewImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewImageCell.h; sourceTree = "<group>"; };
+		E4AD33D019F0E41000ACCCC9 /* CollectionViewImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewImageCell.m; sourceTree = "<group>"; };
+		E4AD33D219F0F75300ACCCC9 /* ImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDetailViewController.h; sourceTree = "<group>"; };
+		E4AD33D319F0F75300ACCCC9 /* ImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,10 @@
 				E41648B019F061E9008984D3 /* ViewController.h */,
 				E41648B119F061E9008984D3 /* ViewController.m */,
 				E41648B319F061E9008984D3 /* Main.storyboard */,
+				E4AD33CF19F0E41000ACCCC9 /* CollectionViewImageCell.h */,
+				E4AD33D019F0E41000ACCCC9 /* CollectionViewImageCell.m */,
+				E4AD33D219F0F75300ACCCC9 /* ImageDetailViewController.h */,
+				E4AD33D319F0F75300ACCCC9 /* ImageDetailViewController.m */,
 				E41648B619F061E9008984D3 /* Images.xcassets */,
 				E41648B819F061E9008984D3 /* LaunchScreen.xib */,
 				E41648A919F061E9008984D3 /* Supporting Files */,
@@ -228,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E41648B219F061E9008984D3 /* ViewController.m in Sources */,
+				E4AD33D419F0F75300ACCCC9 /* ImageDetailViewController.m in Sources */,
 				E41648AF19F061E9008984D3 /* AppDelegate.m in Sources */,
+				E4AD33D119F0E41000ACCCC9 /* CollectionViewImageCell.m in Sources */,
 				E41648AC19F061E9008984D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
