@@ -14,6 +14,8 @@
 		E41648B719F061E9008984D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41648B619F061E9008984D3 /* Images.xcassets */; };
 		E41648BA19F061E9008984D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41648B819F061E9008984D3 /* LaunchScreen.xib */; };
 		E41648C619F061E9008984D3 /* FavoritePhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E41648C519F061E9008984D3 /* FavoritePhotosTests.m */; };
+		E4AD33CC19F0BCBE00ACCCC9 /* insta.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4AD33CB19F0BCBE00ACCCC9 /* insta.plist */; };
+		E4AD33CE19F0DB3B00ACCCC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AD33CD19F0DB3B00ACCCC9 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		E41648BF19F061E9008984D3 /* FavoritePhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavoritePhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41648C419F061E9008984D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E41648C519F061E9008984D3 /* FavoritePhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritePhotosTests.m; sourceTree = "<group>"; };
+		E4AD33CB19F0BCBE00ACCCC9 /* insta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = insta.plist; sourceTree = "<group>"; };
+		E4AD33CD19F0DB3B00ACCCC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4AD33CE19F0DB3B00ACCCC9 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +68,7 @@
 		E416489D19F061E9008984D3 = {
 			isa = PBXGroup;
 			children = (
+				E4AD33CD19F0DB3B00ACCCC9 /* CoreLocation.framework */,
 				E41648A819F061E9008984D3 /* FavoritePhotos */,
 				E41648C219F061E9008984D3 /* FavoritePhotosTests */,
 				E41648A719F061E9008984D3 /* Products */,
@@ -97,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				E41648AA19F061E9008984D3 /* Info.plist */,
+				E4AD33CB19F0BCBE00ACCCC9 /* insta.plist */,
 				E41648AB19F061E9008984D3 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -201,6 +208,7 @@
 			files = (
 				E41648B519F061E9008984D3 /* Main.storyboard in Resources */,
 				E41648BA19F061E9008984D3 /* LaunchScreen.xib in Resources */,
+				E4AD33CC19F0BCBE00ACCCC9 /* insta.plist in Resources */,
 				E41648B719F061E9008984D3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +420,7 @@
 				E41648CB19F061E9008984D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E41648CC19F061E9008984D3 /* Build configuration list for PBXNativeTarget "FavoritePhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +429,7 @@
 				E41648CE19F061E9008984D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

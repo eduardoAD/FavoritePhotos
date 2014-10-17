@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KREDIRECTURI</key>
+	<string>http://mycodelines.blogspot.mx/</string>
+	<key>KCLIENTSECRET</key>
+	<string>07590ed756f44c00abc41c6c756beeab</string>
+	<key>KCLIENTID</key>
+	<string>a9dc4e37b85b4e8b946097d0bb4f0001</string>
+	<key>KAPIURL</key>
+	<string>https://api.instagram.com/v1/</string>
+	<key>KAUTHURL</key>
+	<string>https://api.instagram.com/oauth/authorize/</string>
+</dict>
+</plist>
