@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vnA-up-xkg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vnA-up-xkg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -19,9 +19,6 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNP-F8-3CZ">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
-                                </variation>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="7Ml-ZU-8tN"/>
                                 </connections>
@@ -77,8 +74,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wNP-F8-3CZ" secondAttribute="trailing" id="06H-AG-bpb"/>
+                            <constraint firstItem="wNP-F8-3CZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="0xd-qI-Rl2"/>
+                            <constraint firstItem="wNP-F8-3CZ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="L9H-Nr-Ul3">
+                                <variation key="widthClass=compact" constant="32"/>
+                            </constraint>
                             <constraint firstItem="omx-zc-oxn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="U3g-uI-4tL"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="omx-zc-oxn" secondAttribute="bottom" id="UYf-sF-sGE"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="wNP-F8-3CZ" secondAttribute="bottom" id="n3f-4w-L8w">
+                                <variation key="widthClass=compact" constant="32"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="omx-zc-oxn" secondAttribute="trailing" id="uKb-fP-cBi"/>
                             <constraint firstItem="omx-zc-oxn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="uul-XU-tUA"/>
                         </constraints>
@@ -88,10 +93,14 @@
                                 <exclude reference="omx-zc-oxn"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="06H-AG-bpb"/>
+                                <exclude reference="0xd-qI-Rl2"/>
+                                <exclude reference="L9H-Nr-Ul3"/>
                                 <exclude reference="U3g-uI-4tL"/>
                                 <exclude reference="uKb-fP-cBi"/>
                                 <exclude reference="uul-XU-tUA"/>
                                 <exclude reference="UYf-sF-sGE"/>
+                                <exclude reference="n3f-4w-L8w"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -100,10 +109,14 @@
                                 <include reference="omx-zc-oxn"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="06H-AG-bpb"/>
+                                <include reference="0xd-qI-Rl2"/>
+                                <include reference="L9H-Nr-Ul3"/>
                                 <include reference="U3g-uI-4tL"/>
                                 <include reference="uKb-fP-cBi"/>
                                 <include reference="uul-XU-tUA"/>
                                 <include reference="UYf-sF-sGE"/>
+                                <include reference="n3f-4w-L8w"/>
                             </mask>
                         </variation>
                     </view>
@@ -127,10 +140,15 @@
                         <viewControllerLayoutGuide type="bottom" id="MMp-10-Tb6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WO9-Fp-Gia">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1yh-5J-Fwz">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZrL-Zy-Yt1" appends="YES" id="87c-pM-Xkj"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -145,10 +163,10 @@
                                 <exclude reference="1yh-5J-Fwz"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="URB-US-MYt"/>
                                 <exclude reference="24E-LH-oUd"/>
                                 <exclude reference="GAr-4Z-Aln"/>
                                 <exclude reference="QGa-vZ-iQC"/>
-                                <exclude reference="URB-US-MYt"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -156,10 +174,10 @@
                                 <include reference="1yh-5J-Fwz"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="URB-US-MYt"/>
                                 <include reference="24E-LH-oUd"/>
                                 <include reference="GAr-4Z-Aln"/>
                                 <include reference="QGa-vZ-iQC"/>
-                                <include reference="URB-US-MYt"/>
                             </mask>
                         </variation>
                     </view>
@@ -168,6 +186,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pD8-En-GZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZrL-Zy-Yt1"/>
             </objects>
             <point key="canvasLocation" x="2410.5" y="82"/>
         </scene>

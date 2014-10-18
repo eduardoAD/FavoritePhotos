@@ -55,6 +55,8 @@
     NSLog(@"KACCESS_TOKEN: %@",token);
 
     if (token == nil) {
+        self.webView.hidden = NO;
+        self.imageCollectionView.hidden = YES;
         [self loadURL];
     }
 }
@@ -135,13 +137,20 @@
                              self.currentLocation.thoroughfare,
                              self.currentLocation.locality];
         NSLog(@"Found you: %@",address);
-        [self loadRequestForSearch];
-        [self.imageCollectionView reloadData];
+
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        NSString *token = [userDefaults objectForKey:@"KACCESS_TOKEN"];
+        NSLog(@"KACCESS_TOKEN: %@",token);
+        if (token != nil) {
+            [self loadRequestForSearch];
+            [self.imageCollectionView reloadData];
+        }
     }];
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return self.instaResultData.count;
+    //return self.instaResultData.count;
+    return 10;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
