@@ -143,11 +143,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1yh-5J-Fwz">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1yh-5J-Fwz">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ZrL-Zy-Yt1" appends="YES" id="87c-pM-Xkj"/>
+                                    <outletCollection property="gestureRecognizers" destination="i0H-vf-5VG" appends="YES" id="5o6-dP-wJH"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -186,7 +186,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pD8-En-GZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="ZrL-Zy-Yt1"/>
+                <tapGestureRecognizer id="i0H-vf-5VG">
+                    <connections>
+                        <action selector="imageTapped:" destination="mDW-FH-Tdq" id="eam-Zc-Akp"/>
+                        <outlet property="delegate" destination="mDW-FH-Tdq" id="ISR-nb-6ZG"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2410.5" y="82"/>
         </scene>

@@ -68,7 +68,10 @@
 }
 
 -(void)loadURL{
-    NSString *stringURL = [NSString stringWithFormat:@"%@?client_id=%@&redirect_uri=%@&response_type=token",[self.instaProperties objectForKey:@"KAUTHURL"],[self.instaProperties objectForKey:@"KCLIENTID"],[self.instaProperties objectForKey:@"KREDIRECTURI"]];
+    NSString *stringURL = [NSString stringWithFormat:@"%@?client_id=%@&redirect_uri=%@&scope=likes&response_type=token",
+                           [self.instaProperties objectForKey:@"KAUTHURL"],
+                           [self.instaProperties objectForKey:@"KCLIENTID"],
+                           [self.instaProperties objectForKey:@"KREDIRECTURI"]];
     NSURL *url = [NSURL URLWithString:stringURL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
@@ -173,8 +176,13 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     ImageDetailViewController *destination = [segue destinationViewController];
 
+    destination.instaProperties = self.instaProperties;
+    destination.id = [self.selectedItem objectForKey:@"id"];
     NSString *stringURL = [[(NSDictionary *)[(NSDictionary *)self.selectedItem objectForKey:@"images"] objectForKey:@"standard_resolution"] objectForKey:@"url"];
     NSLog(@"url image standard: %@",stringURL);
+    destination.user_has_liked = [[self.selectedItem objectForKey:@"user_has_liked"] description];
+    NSLog(@"user has liked: %@",destination.user_has_liked);
+
     destination.stringURL = stringURL;
 }
 

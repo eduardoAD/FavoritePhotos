@@ -10,5 +10,9 @@
 
 @interface ImageDetailViewController : ViewController
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property NSDictionary *instaProperties;
 @property NSString *stringURL;
+@property NSString *id;
+@property NSString *user_has_liked;
+
 @end
