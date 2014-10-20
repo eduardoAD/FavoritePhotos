@@ -93,14 +93,14 @@
                                 <exclude reference="omx-zc-oxn"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="UYf-sF-sGE"/>
+                                <exclude reference="n3f-4w-L8w"/>
                                 <exclude reference="06H-AG-bpb"/>
                                 <exclude reference="0xd-qI-Rl2"/>
                                 <exclude reference="L9H-Nr-Ul3"/>
                                 <exclude reference="U3g-uI-4tL"/>
                                 <exclude reference="uKb-fP-cBi"/>
                                 <exclude reference="uul-XU-tUA"/>
-                                <exclude reference="UYf-sF-sGE"/>
-                                <exclude reference="n3f-4w-L8w"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -109,14 +109,14 @@
                                 <include reference="omx-zc-oxn"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="UYf-sF-sGE"/>
+                                <include reference="n3f-4w-L8w"/>
                                 <include reference="06H-AG-bpb"/>
                                 <include reference="0xd-qI-Rl2"/>
                                 <include reference="L9H-Nr-Ul3"/>
                                 <include reference="U3g-uI-4tL"/>
                                 <include reference="uKb-fP-cBi"/>
                                 <include reference="uul-XU-tUA"/>
-                                <include reference="UYf-sF-sGE"/>
-                                <include reference="n3f-4w-L8w"/>
                             </mask>
                         </variation>
                     </view>
